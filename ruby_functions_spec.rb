@@ -64,7 +64,20 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Sep", ninth_month_string )
   end
 
+  def test_volume_of_cube()
+    volume_of_cube_result = volume_of_cube(2)
+    assert_equal(8, volume_of_cube_result)
+  end
 
+  def test_volume_of_sphere()
+    volume_of_sphere_result = volume_of_sphere(9)
+    assert_equal(3053.63, volume_of_sphere_result)
+  end
+
+  def test_fahrenheit_to_celsius()
+    result = fahrenheit_to_celsius(80)
+    assert_equal(26, result)
+  end
 
   # #Further
 

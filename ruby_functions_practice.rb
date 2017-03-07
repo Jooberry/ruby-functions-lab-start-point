@@ -34,41 +34,32 @@ def number_to_full_month_name(string)
   case string
     when 1 
       "January"
-    when 2 
-      "February"
     when 3 
       "March"
-    when 4 
-      "April"
-    when 5 
-      "May"
-    when 6 
-      "June"
-    when 7 
-      "July"
-    when 8 
-      "August"
     when 9 
       "September"
-    when 10 
-      "October"
-    when 11 
-      "November"
-    when 12 
-      "December"
   end
 end
 
 def number_to_short_month_name(string)
   case string
     when 1
-    "Jan"
+      "Jan"
     when 3
-    "Mar"
+      "Mar"
     when 9
-    "Sep"
+      "Sep"
   end
+end
 
+def volume_of_cube(length)
+  volume = length**3
+end
 
+def volume_of_sphere(radius)
+  return ((4.0 / 3.0) * Math::PI * radius**3.0).round(2)
+end
 
+def fahrenheit_to_celsius(fahrenheit)
+  return (((fahrenheit - 32) * 5) / 9).round(0)
 end
